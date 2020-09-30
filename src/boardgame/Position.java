@@ -5,6 +5,7 @@ public class Position {
 	private int row;
 	private int column;
 	
+	//aqui sera a peças do tabuleiro
 	public Position(int row, int column) {
 		
 		this.row = row;

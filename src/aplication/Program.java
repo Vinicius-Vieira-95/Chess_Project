@@ -19,6 +19,7 @@ public class Program {
 
 			try {
 				UI.clearScreen();
+				System.out.println();
 				UI.printBoard(chess.getPieces());
 				System.out.println();
 	
@@ -33,11 +34,11 @@ public class Program {
 			}
 			catch(ChessException e) {
 				System.out.println(e.getMessage());
-				sc.hasNextLine();
+				sc.nextLine();
 			}
 			catch(InputMismatchException e) {
 				System.out.println(e.getMessage());
-				sc.hasNextLine();
+				sc.nextLine();
 			}
 
 		}

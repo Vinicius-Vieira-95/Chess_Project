@@ -1,5 +1,6 @@
 package boardgame;
 
+//classe abstrata
 public abstract class Piece {
 
 	protected Position position;
@@ -10,7 +11,6 @@ public abstract class Piece {
 		position = null;
 	}
 
-	
 	protected Board getBoard() {
 		return board;
 	}	
@@ -20,7 +20,8 @@ public abstract class Piece {
 	public boolean possibleMove(Position position) {
 		return possibleMoves()[position.getRow()][position.getColumn()];
 	}
-	
+
+	//verificando se há moviemntos possiveis
 	public boolean isThereAniPossibleMove() {
 		boolean[][] mat = possibleMoves();
 		

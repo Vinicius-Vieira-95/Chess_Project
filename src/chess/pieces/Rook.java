@@ -9,7 +9,6 @@ public class Rook extends ChessPiece {
 
 	public Rook(Board board, Color color) {
 		super(board, color);
-
 	}
 
 	@Override
@@ -62,7 +61,6 @@ public class Rook extends ChessPiece {
 		if(getBoard().positionExists(p) && isThereOpponentPiece(p)) {
 			mat[p.getRow()][p.getColumn()] = true;
 		}
-		
 		
 		return mat;
 	}

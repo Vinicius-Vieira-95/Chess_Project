@@ -13,8 +13,6 @@ import chess.ChessPosition;
 public class Program {
 
 	public static void main(String[] args) {
-		
-		System.out.println("Olá bebê");
 
 		Scanner sc = new Scanner(System.in);
 		ChessMatch chess = new ChessMatch();
